@@ -7,7 +7,7 @@ app = FastAPI()
 
 # 🔑 PUT YOUR GEMINI API KEY HERE
 import os
-genai.configure(api_key=os.environ["gen-lang-client-0494493325"])
+genai.configure(api_key=os.environ["AIzaSyB8AnW8CGzI5kA56gF2v9z-ixt4bW_UhFQ"])
 
 # Models
 model = genai.GenerativeModel("gemini-1.5-flash")
@@ -64,4 +64,5 @@ async def analyze_audio(file: UploadFile = File(...)):
         "emotion_scores": scores
 
     }
+
 
